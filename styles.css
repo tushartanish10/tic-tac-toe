@@ -1,0 +1,87 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #FF7E5F, #FEB47B); /* Vibrant gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+}
+
+/* Game container */
+.game-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    backdrop-filter: blur(10px); /* Adds blur effect to background */
+}
+
+/* Title Styling */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Game board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for each cell */
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    background-color: #fffae5; /* Light pastel yellow */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on cells */
+.cell:hover {
+    background-color: #ffec99; /* Slightly darker yellow */
+    transform: scale(1.1);
+}
+
+/* Button styling */
+#restart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Vibrant green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on restart button */
+#restart-btn:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.1);
+}
+
+/* Styling for messages (winner or draw) */
+.message {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+    font-weight: bold;
+}
